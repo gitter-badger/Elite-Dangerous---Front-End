@@ -1,1 +1,1 @@
-elite-dangerous-front-end
+elite-angular

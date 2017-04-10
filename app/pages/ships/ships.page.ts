@@ -4,7 +4,7 @@ import { Http,Response } from '@angular/http';
 
 
 @Component({
-  template: '<div *ngFor="let ship of ships">{{ ship.Name }}</div>',
+  templateUrl: './app/pages/ships/ships.page.html',
 })
 
 
@@ -12,14 +12,14 @@ import { Http,Response } from '@angular/http';
 
 export class ShipsPage implements OnInit {
 
-    protected api_key:string = "e64fcf96eeba5b5eeaa752101e20a74f";
+    protected api_url:string = "http://edbacked";
+    protected api_key:string = "/e64fcf96eeba5b5eeaa752101e20a74f";
 
-
-    ships: any[];
+    ships_data: any[];
 
     constructor( private http:Http){
-        this.http.get('http://localhost/ed_backedn/index.php?url='+this.api_key+'/ships').subscribe(
-            (response:Response) =>{ this.ships = response.json(); }
+        this.http.get(this.api_url+this.api_key+'/ships').subscribe(
+            (response:Response) =>{ this.ships_data = response.json(); }
         );
 
     }

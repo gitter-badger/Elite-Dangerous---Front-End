@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            Ewwe
+        </div>
+        <div class="col-md-8">
+            <table class="table">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th>#</th>
+                        <th>Ship</th>
+                        <th>Manufacturer</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ship of ships_data">
+                        <th scope="row">{{ ship.id }}</th>
+                        <td>{{ ship.Name }}</td>
+                        <td>{{ ship.Manufacturer }}</td>
+                        <td>{{ ship.Price | number:'.2-2' }} Cr</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

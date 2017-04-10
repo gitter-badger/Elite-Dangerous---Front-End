@@ -4,6 +4,7 @@ import { FormsModule,ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { routing } from './routes';
 
+
 import { MainComponent } from './component';
 
 import { HomePage } from './pages/home/home.page';
@@ -20,7 +21,6 @@ import { ShipsPage } from './pages/ships/ships.page';
         HttpModule,
         JsonpModule,
         routing,
-
     ],
     declarations:
     [

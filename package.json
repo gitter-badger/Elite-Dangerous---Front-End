@@ -1,5 +1,5 @@
 {
-  "name": "angular2-starter-basic",
+  "name": "elite-dangerous-front-end",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "tsc:w": "tsc -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ewwe",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "2.5.36",
